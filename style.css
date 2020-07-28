@@ -49,9 +49,8 @@ body{
 }
 
 .btn {
-    margin-top: 76px;
+    margin-top: 80px;
     position: absolute;
-    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -212,7 +211,7 @@ body{
     margin-left: 182px;
     margin-top: -60px;
 }
-.time{
+#time{
     color: rgb(177, 255, 255);
     font-family: 'Merienda', cursive;
     font-size: 20px;
@@ -220,6 +219,92 @@ body{
     margin-top: 20px;
 }
 
+@media only screen and (max-width: 480px){
+.container{
+        
+        width: 270px;
+        height: 450px;
+        padding: 7px;
+  
+    }
+#welcome{
+        font-size:30px;
+       
+      }
+    .list1{
+        margin-top: 70px;
+        font-size: 19px;
+        margin-left: 10px;
+        margin-right: 10px;
+        line-height: 35px;
+       
+    }
+#start{
+        margin-top: 70px;
+        padding: 9px 22px;
+        font-size: 16px;
+        margin-left: 26%;
+       }
+.container2
+    {
+    width: 285px;
+    height: 500px;
+    padding: 10px;
+   }
+#paper h3{
+    font-size: 23px;
+    margin-left: -3px;
+    margin-top: 40px;
 
+}
+#paper_status{
+    font-size: 26px;
+    margin-left: 10px;
+}
+#paper label{
+    margin-left: -10px;
+    line-height: 43px;
+    font-size: 17px;
+    letter-spacing: 2.5px;  
+}
+#paper{
+    margin-left: 10px;
+}
+#paper button{
+    margin-top: 7px;
+    padding: 9px 22px;
+    font-size: 15px;
+    margin-right: 20px;
+    }
+ 
+#paper a button{
+    margin-top: 30px;
+    margin-right:84px;
+    padding: 9px 22px;
+    font-size: 15px;
+}
+#paper h2{
+    margin-left: -10px;
+    margin-top: 20px;
+    font-size: 19px; 
+}
+#paper_status h1{
+    font-size:27px;
+}
+#paper img {
+    width: 150px;
+    height: 133px;
+    margin-left: 60px;
+    margin-top: -40px;
+}
+#time{
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+  
+
+
+}
 
 

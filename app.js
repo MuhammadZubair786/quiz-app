@@ -16,11 +16,13 @@
        if(minutes.innerHTML==2 && seconds.innerHTML==30 ){
            clearTimeout(interval);
            alert("Time's Up!!");
-           paper.innerHTML = "<img src='medal.png'><br><h2>You got "+right+ " of "+questions.length+" questions right</h2>"+"<br>"+"<h2>You got "+points+ " points</h2><br><h2>Time:"+minutes.innerHTML+" : "+seconds.innerHTML;
+           paper.innerHTML = "<img src='medal.png'><br><h2>You got "+right+ " of "+questions.length+" questions right</h2>"+"<br>"+"<h2>You got "+points+ " points</h2><br><h2>Time: "+minutes.innerHTML+" : "+seconds.innerHTML;
            paper.innerHTML += "<a href='index.html'><button>Try Again</button></a><br>";
-            getId("paper_status").innerHTML = "<h1>Your quiz has been competed!</h1>"+"<br>";
-            
-          
+            getId("paper_status").innerHTML = "<h1>Your quiz has been competed!</h1>"+"<br>"; 
+            document.getElementById("min").innerHTML = "";
+            document.getElementById("sec").innerHTML = "";
+            document.getElementById("colon").innerHTML = "";
+            document.getElementById("time").innerHTML = "";
        }
     }
     interval = setInterval(timer,1000);
@@ -85,9 +87,13 @@ function getQuestion(){
     paper = getId("paper");
    
     if(count >= questions.length){
-        paper.innerHTML = "<img src='medal.png'><br><h2>You got "+right+ " of "+questions.length+" questions right</h2>"+"<br>"+"<h2>You got "+points+ " points</h2><br><h2>Time:"+minutes.innerHTML+" : "+seconds.innerHTML;
+        paper.innerHTML = "<img src='medal.png'><br><h2>You got "+right+ " of "+questions.length+" questions right</h2>"+"<br>"+"<h2>You got "+points+ " points</h2><br><h2>Time: "+minutes.innerHTML+" : "+seconds.innerHTML;
        paper.innerHTML += "<a href='index.html'><button>Try Again</button></a><br>";
         getId("paper_status").innerHTML = "<h1>Your quiz has been competed!</h1>"+"<br>";
+        document.getElementById("min").innerHTML = "";
+        document.getElementById("sec").innerHTML = "";
+        document.getElementById("colon").innerHTML = "";
+        document.getElementById("time").innerHTML = "";
        
         count = 0;
         right = 0;
